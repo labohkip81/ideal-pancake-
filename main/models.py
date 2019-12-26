@@ -16,6 +16,7 @@ class ProductImage(models.Model):
     
     #the below model needs pillow so that it can function well.
     image = models.ImageField(upload_to="product-images")
+    thumbnail = models.ImageField(upload_to="product-thumbnails", null=True)
 
 class ProductTag(models.Model):
     products = models.ManyToManyField(Product, blank=True)
