@@ -1,0 +1,29 @@
+[
+{
+  "model": "main.producttag",
+  "fields": {
+    "name": "Laban1",
+    "slug": "laban1",
+    "description": "vew;tbgql3a",
+    "active": true
+  }
+},
+{
+  "model": "main.producttag",
+  "fields": {
+    "name": "Laban1",
+    "slug": "laban1",
+    "description": "bdjhgh 10000",
+    "active": true
+  }
+},
+{
+  "model": "main.producttag",
+  "fields": {
+    "name": "latest",
+    "slug": "latest",
+    "description": "latst tag for this product.",
+    "active": true
+  }
+}
+]

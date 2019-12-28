@@ -11,6 +11,7 @@ class ProductAdmin(admin.ModelAdmin):
     list_editable = ('in_stock', 'price')
     search_fields = ('name',)
     prepopulated_fields = {"slug":("name",)}
+    autocomplete_fields = ('tags',)
     #readonly_fields = ('slug',)
 
 admin.site.register(models.Product, ProductAdmin)
@@ -21,7 +22,6 @@ class ProductTagAdmin(admin.ModelAdmin):
     list_filter = ('active',)
     search_fields = ('name',)
     prepopulated_fields = {"slug":("name",)}
-    autocomplete_fields = ('products',)
 
 
 admin.site.register(models.ProductTag, ProductTagAdmin)
