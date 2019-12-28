@@ -8,11 +8,40 @@ from . import models
 class ProductAdmin(admin.ModelAdmin):
     list_display = ('name', 'slug', 'in_stock', 'price')
     list_filter = ('active', 'in_stock', 'date_updated', 'price')
-    list_editable = ('in_stock',)
+    list_editable = ('in_stock', 'price')
     search_fields = ('name',)
     prepopulated_fields = {"slug":("name",)}
     #readonly_fields = ('slug',)
 
 admin.site.register(models.Product, ProductAdmin)
-admin.site.register(models.ProductTag)
-admin.site.register(models.ProductImage)
+
+
+class ProductTagAdmin(admin.ModelAdmin):
+    list_display = ('name', 'slug')
+    list_filter = ('active',)
+    search_fields = ('name',)
+    prepopulated_fields = {"slug":("name",)}
+    autocomplete_fields = ('products',)
+
+
+admin.site.register(models.ProductTag, ProductTagAdmin)
+
+
+class ProductImageAdmin(admin.ModelAdmin):
+    list_display = ('thumbnail_tag', 'product_name')
+    readonly_fields = ('thumbnail',)
+    search_fields = ('product_name',)
+
+    def thumbnail_tag(self, obj):
+        if obj.thumbnail:
+            return format_html(
+                '<img src="%s"/>' % obj.thumbnail.url
+            )
+        return "_"
+    thumbnail_tag.short_description = "Thumbnail"
+
+    def product_name(self, obj):
+        return obj.product.name
+
+
+admin.site.register(models.ProductImage, ProductImageAdmin)

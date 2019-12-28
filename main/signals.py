@@ -16,11 +16,11 @@ logger = logging.getLogger(__name__)
 def generate_thumbnail(sender, instance, **kwargs):
     logger.info("Generating thumbnail for product %d", instance.product.id)
     image = Image.open(instance.image)
-    image = Image.convert("RGB")
+    image = image.convert("RGB")
     image.thumbnail(THUMBNAIL_SIZE, Image.ANTIALIAS)
     temp_thumb = BytesIO()
     image.save(temp_thumb, "JPEG")
-    temp_thumb.seek(o)
+    temp_thumb.seek(0)
 
     #set save = False otherwise it will run in an infinite loop
 
