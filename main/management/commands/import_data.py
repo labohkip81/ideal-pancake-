@@ -1,35 +1,35 @@
-from collections import Counter
-import csv
-import os.path
-from django.core.files.images import ImageFile
-from django.core.management.base import BaseCommand
-from django.template.defaultfilters import slugify
-from main import models
+# from collections import Counter
+# import csv
+# import os.path
+# from django.core.files.images import ImageFile
+# from django.core.management.base import BaseCommand
+# from django.template.defaultfilters import slugify
+# from main import models
 
-class Command(BaseCommand):
-    help = 'Import products in Booktime'
+# class Command(BaseCommand):
+#     help = 'Import products in Booktime'
 
-    def add_arguments(self, parser):
-        parser.add_argument("csvfile", type=open)
-        parser.add_argument("image_basedir", type=str)
+#     def add_arguments(self, parser):
+#         parser.add_argument("csvfile", type=open)
+#         parser.add_argument("image_basedir", type=str)
 
 
-    def handle(self, *args, **options):
-        self.stdout.write("Importing products")
-        c = Counter()
-        reader = csv.DictReader(options.pop("csvfile"))
+#     def handle(self, *args, **options):
+#         self.stdout.write("Importing products")
+#         c = Counter()
+#         reader = csv.DictReader(options.pop("csvfile"))
 
-        for row in reader:
-            product, created = models.Product.objects.get_or_create(name=row["name"], price=row["price"])
-            product.description = row["description"]
-            product.slug = slugify(row["name"])
+#         for row in reader:
+#             product, created = models.Product.objects.get_or_create(name=row["name"], price=row["price"])
+#             product.description = row["description"]
+#             product.slug = slugify(row["name"])
 
-            for import_tag in row["tags"].split("|"):
-                tag, tag_created = models.ProductTag.objects.get_or_create(name=import_tag)
-                product.tags.add(tag)
-                c["tags"]+= 1
+#             for import_tag in row["tags"].split("|"):
+#                 tag, tag_created = models.ProductTag.objects.get_or_create(name=import_tag)
+#                 product.tags.add(tag)
+#                 c["tags"]+= 1
 
-                if tag_created:
-                    c["tags_created"] += 1
+#                 if tag_created:
+#                     c["tags_created"] += 1
 
-            with open()
+#             with open()
