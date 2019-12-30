@@ -136,3 +136,7 @@ else:
     EMAIL_BACKEND = ( 
         'django.core.mail.backends.console.EmailBackend'
     )
+
+#configuration directive for django to make use of the custom user model.
+
+AUTH_USER_MODEL = "main.User"
