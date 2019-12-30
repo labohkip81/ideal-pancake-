@@ -1,0 +1,338 @@
+Script started on 2019-12-30 12:21:14+03:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="85" LINES="11"]
+​​​​​​​​​​[1K[1mscript[0m [[32menter[0m/[34m↑[0m/[34m↓[0m/[31mctrl+c[0m]
+Script started, file is typescript
+​​​​​​​​​​[1K[1mscript[0m [[32menter[0m/[34m↑[0m/[34m↓[0m/[31mctrl+c[0m][31m
+Aborted[0m
+[1m[7m%[27m[1m[0m                                                                                     ]2;gg@gg-Latitude-5490: ~/Dev/federico]1;~/Dev/federico[0m[27m[24m[J[01;32m➜  [36mfederico[00m [01;34mgit:([31mmaster[34m)[00m [K[?1h=[?2004h[1m[31mp[0m[39m[90msql[39m[1m[31mp[1m[31my[0m[39m[90mt[90mh[90mon3 manage.py shell[39m[21D[1m[31mp[1m[31my[1m[31mt[0m[39m[1m[31mt[1m[31mh[0m[39m[0m[32mp[0m[32my[0m[32mt[0m[32mh[32mo[32mn[32m3[39m[39m [39m[4mm[39m[4ma[39m[4mn[39m[4ma[39m[4mg[39m[4me[39m[4m.[39m[4mp[39m[4my[24m[39m [39ms[39mh[39me[39ml[39ml[90ml[39m[90ml[90me[90mh[90ms[39m[39m[4mm[24m[39m [39m [39m [39m [4mm[4ma[24m[24mm[24makemigrations[?1l>[?2004l
+]2;python3 manage.py makemigrations]1;python3Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/core/management/__init__.py", line 401, in execute_from_command_line
+    utility.execute()
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/core/management/__init__.py", line 377, in execute
+    django.setup()
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/apps/registry.py", line 114, in populate
+    app_config.import_models()
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/apps/config.py", line 211, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/gg/Dev/federico/main/models.py", line 2, in <module>
+    from django.contrib.auth.models import  AbstractUSer, BaseUserManager
+ImportError: cannot import name 'AbstractUSer' from 'django.contrib.auth.models' (/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/contrib/auth/models.py)
+[1m[7m%[27m[1m[0m                                                                                     ]2;gg@gg-Latitude-5490: ~/Dev/federico]1;~/Dev/federico[0m[27m[24m[J[01;31m➜  [36mfederico[00m [01;34mgit:([31mmaster[34m)[00m [K[?1h=[?2004h[32mpython3[39m [4mmanage.py[24m makemigrations[?1l>[?2004l
+]2;python3 manage.py makemigrations]1;python3Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/core/management/__init__.py", line 401, in execute_from_command_line
+    utility.execute()
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/sVEkPT/lib/python3.7/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/apps/registry.py", line 114, in populate
+    app_config.import_models()
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/apps/config.py", line 211, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/gg/Dev/federico/main/models.py", line 29, in <module>
+    class User(AbstractUSer):
+NameError: name 'AbstractUSer' is not defined
+[1m[7m%[27m[1m[0m                                                                                     ]2;gg@gg-Latitude-5490: ~/Dev/federico]1;~/Dev/federico[0m[27m[24m[J[01;31m➜  [36mfederico[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004h[32mpython3[39m [4mmanage.py[24m makemigrations[?1l>[?2004l
+]2;python3 manage.py makemigrations]1;python3Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/core/management/__init__.py", line 401, in execute_from_command_line
+    utility.execute()
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/core/management/__init__.py", line 377, in execute
+    django.setup()
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/apps/registry.py", line 122, in populate
+    app_config.ready()
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/contrib/admin/apps.py", line 24, in ready
+    self.module.autodiscover()
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/contrib/admin/__init__.py", line 26, in autodiscover
+    autodiscover_modules('admin', register_to=site)
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/utils/module_loading.py", line 47, in autodiscover_modules
+    import_module('%s.%s' % (app_config.name, module_to_search))
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/gg/Dev/federico/main/admin.py", line 61
+    add_fieldsets = (( None, {
+                  ^
+SyntaxError: invalid syntax
+[1m[7m%[27m[1m[0m                                              add_fieldsets = (( None, {
+                  ^
+SyntaxError: invalid syntax
+[1m[7m%[27m[1m[0m                                                                                     ]2;gg@gg-Latitude-5490: ~/Dev/federico]1;~/Dev/federico[0m[27m[24m[J[01;31m➜  [36mfederico[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004h[32mpython3[39m [4mmanage.py[24m makemigrations[?1l>[?2004l
+]2;python3 manage.py makemigrations]1;python3Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/core/management/__init__.py", line 401, in execute_from_command_line
+    utility.execute()
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/core/management/__init__.py", line 377, in execute
+    django.setup()
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/apps/registry.py", line 122, in populate
+    app_config.ready()
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/contrib/admin/apps.py", line 24, in ready
+    self.module.autodiscover()
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/contrib/admin/__init__.py", line 26, in autodiscover
+    autodiscover_modules('admin', register_to=site)
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/utils/module_loading.py", line 47, in autodiscover_modules
+    import_module('%s.%s' % (app_config.name, module_to_search))
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/gg/Dev/federico/main/admin.py", line 61
+    add_fieldsets = ( None, {
+                  ^
+SyntaxError: invalid syntax
+[1m[7m%[27m[1m[0m                                                                                     ]2;gg@gg-Latitude-5490: ~/Dev/federico]1;~/Dev/federico[0m[27m[24m[J[01;31m➜  [36mfederico[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004h[32mpython3[39m [4mmanage.py[24m makemigrations[?1l>[?2004l
+]2;python3 manage.py makemigrations]1;python3Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/core/management/__init__.py", line 401, in execute_from_command_line
+    utility.execute()
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/core/management/__init__.py", line 377, in execute
+    django.setup()
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/apps/registry.py", line 122, in populate
+    app_config.ready()lf.module.autodiscover()
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/contrib/admin/__init__.py", line 26, in autodiscover
+    autodiscover_modules('admin', register_to=site)
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/utils/module_loading.py", line 47, in autodiscover_modules
+    import_module('%s.%s' % (app_config.name, module_to_search))
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/gg/Dev/federico/main/admin.py", line 61
+    add_fieldsets = (None, {
+                  ^
+SyntaxError: invalid syntax
+[1m[7m%[27m[1m[0m                                                                                     ]2;gg@gg-Latitude-5490: ~/Dev/federico]1;~/Dev/federico[0m[27m[24m[J[01;31m➜  [36mfederico[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004h[32mpython3[39m [4mmanage.py[24m makemigrations[?1l>[?2004l
+]2;python3 manage.py makemigrations]1;python3Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/core/management/__init__.py", line 401, in execute_from_command_line
+    utility.execute()
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/core/management/__init__.py", line 377, in execute
+    django.setup()
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/apps/registry.py", line 122, in populate
+    app_config.ready()
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/contrib/admin/apps.py", line 24, in ready
+    self.module.autodiscover()
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/contrib/admin/__init__.py", line 26, in autodiscover
+    autodiscover_modules('admin', register_to=site)
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/utils/module_loading.py", line 47, in autodiscover_modules
+    import_module('%s.%s' % (app_config.name, module_to_search))
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/gg/Dev/federico/main/admin.py", line 61
+    add_fieldsets=(None, {
+                 ^
+SyntaxError: invalid syntax
+[1m[7m%[27m[1m[0m                                                                                     ]2;gg@gg-Latitude-5490: ~/Dev/federico]1;~/Dev/federico[0m[27m[24m[J[01;31m➜  [36mfederico[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004h[32mpython3[39m [4mmanage.py[24m makemigrations[?1l>[?2004l
+]2;python3 manage.py makemigrations]1;python3Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/core/management/__init__.py", line 401, in execute_from_command_line
+    utility.execute()
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/core/management/__init__.py", line 377, in execute
+    django.setup()
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/apps/registry.py", line 122, in populate
+    app_config.ready()
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/contrib/admin/apps.py", line 24, in ready
+    self.module.autodiscover()
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/contrib/admin/__init__.py", line 26, in autodiscover
+    autodiscover_modules('admin', register_to=site)
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/utils/module_loading.py", line 47, in autodiscover_modules
+    import_module('%s.%s' % (app_config.name, module_to_search))
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/gg/Dev/federico/main/admin.py", line 61
+    add_fieldsets=(None, {
+                 ^
+SyntaxError: invalid syntax
+[1m[7m%[27m[1m[0m                                                                                     ]2;gg@gg-Latitude-5490: ~/Dev/federico]1;~/Dev/federico[0m[27m[24m[J[01;31m➜  [36mfederico[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004h[?1l>[?2004l
+[1m[7m%[27m[1m[0m                                                                                     ]2;gg@gg-Latitude-5490: ~/Dev/federico]1;~/Dev/federico[0m[27m[24m[J[01;31m➜  [36mfederico[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004h[32mpython3[39m [4mmanage.py[24m makemigrations[?1l>[?2004l
+]2;python3 manage.py makemigrations]1;python3Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/core/management/__init__.py", line 401, in execute_from_command_line
+    utility.execute()
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/core/management/__init__.py", line 377, in execute
+    django.setup()
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/apps/registry.py", line 122, in populate
+    app_config.ready()
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/contrib/admin/apps.py", line 24, in ready
+    self.module.autodiscover()
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/contrib/admin/__init__.py", line 26, in autodiscover
+    autodiscover_modules('admin', register_to=site)
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/utils/module_loading.py", line 47, in autodiscover_modules
+    import_module('%s.%s' % (app_config.name, module_to_search))
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/gg/Dev/federico/main/admin.py", line 66
+    )
+    ^
+IndentationError: unexpected indent
+[1m[7m%[27m[1m[0m                                                                                     ]2;gg@gg-Latitude-5490: ~/Dev/federico]1;~/Dev/federico[0m[27m[24m[J[01;31m➜  [36mfederico[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004h[32mpython3[39m [4mmanage.py[24m makemigrations[?1l>[?2004l
+]2;python3 manage.py makemigrations]1;python3Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/core/management/__init__.py", line 401, in execute_from_command_line
+    utility.execute()
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/core/management/__init__.py", line 377, in execute
+    django.setup()
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/apps/registry.py", line 122, in populate
+    app_config.ready()
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/contrib/admin/apps.py", line 24, in ready
+    self.module.autodiscover()
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/contrib/admin/__init__.py", line 26, in autodiscover
+    autodiscover_modules('admin', register_to=site)
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/utils/module_loading.py", line 47, in autodiscover_modules
+    import_module('%s.%s' % (app_config.name, module_to_search))
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/gg/Dev/federico/main/admin.py", line 62
+    add_fieldsets=(None, {"classes": ("Wide",), "fields": ("email","password1","password2"), },), )
+                                                                                                  ^
+SyntaxError: invalid syntax
+[1m[7m%[27m[1m[0m                                                                                     ]2;gg@gg-Latitude-5490: ~/Dev/federico]1;~/Dev/federico[0m[27m[24m[J[01;31m➜  [36mfederico[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004h[32mpython3[39m [4mmanage.py[24m makemigrations[?1l>[?2004l
+]2;python3 manage.py makemigrations]1;python3Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/core/management/__init__.py", line 401, in execute_from_command_line
+    utility.execute()
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/core/management/__init__.py", line 377, in execute
+    django.setup()
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/apps/registry.py", line 122, in populate
+    app_config.ready()
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/contrib/admin/apps.py", line 24, in ready
+    self.module.autodiscover()
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/contrib/admin/__init__.py", line 26, in autodiscover
+    autodiscover_modules('admin', register_to=site)
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/site-packages/django/utils/module_loading.py", line 47, in autodiscover_modules
+    import_module('%s.%s' % (app_config.name, module_to_search))
+  File "/home/gg/.local/share/virtualenvs/federico-ZEnVEkPT/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/gg/Dev/federico/main/admin.py", line 62
+    add_fieldsets=(None, {"classes": ("Wide",), "fields": ("email","password1","password2"), },), ),
+                                                                                                  ^
+SyntaxError: invalid syntax
+[1m[7m%[27m[1m[0m                                                                                     ]2;gg@gg-Latitude-5490: ~/Dev/federico]1;~/Dev/federico[0m[27m[24m[J[01;31m➜  [36mfederico[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004h[32mpython3[39m [4mmanage.py[24m makemigrations[?1l>[?2004l
+]2;python3 manage.py makemigrations]1;python3Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  Fi
