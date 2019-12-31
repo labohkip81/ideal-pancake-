@@ -102,4 +102,24 @@ class AddressCreateView(LoginRequiredMixin, CreateView):
         return super().form_valid(form)
 
 class AddressUpdateView(LoginRequiredMixin, UpdateView):
+    model = models.Address
+    fields = [
+        "name",
+        "address1",
+        "address2",
+        "zip_code",
+        "city",
+        "country",
+    ]
     
+    success_url = reverse_lazy("address_list")
+
+    def get_queryset(self):
+        return self.model.objects.filter(user=self.request.user)
+
+class AddressDeleteView(LoginRequiredMixin, DeleteView):
+    model = models.Address
+    success_url = reverse_lazy("address_list")
+ 
+    def get_queryset(self):
+        return self.model.objects.filter(user=self.request.user) 
