@@ -12,6 +12,9 @@ from django.views.generic.edit import FormView
 from main import models
 from main import forms 
 
+logger = logging.getLogger(__name__)
+
+
 class SignupView(FormView):
     template_name = 'signup.html'
     form_class = forms.UserCreationForm
@@ -24,19 +27,19 @@ class SignupView(FormView):
         response = super().form_valid(form)
         form.save()
 
-    email = form.cleaned_data.get("email")
-    raw_password = form.cleaned_data.get("password1")
-    logger.info("New sign up for email=% through SignupView", email)
-    user = authenticate(email=email, password=raw_password)
-    login(self.request, user)
+        email = form.cleaned_data.get("email")
+        raw_password = form.cleaned_data.get("password1")
+        logger.info("New sign up for email=% through SignupView", email)
+        user = authenticate(email=email, password=raw_password)
+        login(self.request, user)
 
-    form.send_mail()
+        form.send_mail()
 
-    messages.info(
-        self.request, "You signed up successfully."
-    )
+        messages.info(
+            self.request, "You signed up successfully."
+        )
 
-    return response
+        return response
 
 class ProductListView(ListView):
     template_name = "main/product_list.html"

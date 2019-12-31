@@ -9,6 +9,7 @@ from main import models
 
 
 urlpatterns = [
+    path('signup/', views.SignupView.as_view(), name='signup'),
 
     path("product/<slug:slug>/", DetailView.as_view(model=models.Product), name="product",),
     path("products/<slug:tag>/", views.ProductListView.as_view(), name="products",),
