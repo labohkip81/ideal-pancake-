@@ -140,3 +140,6 @@ else:
 #configuration directive for django to make use of the custom user model.
 
 AUTH_USER_MODEL = "main.User"
+
+#This is the page where the user is redirected to when they login to the system.
+LOGIN_REDIRECT_URL = '/'
