@@ -17,3 +17,5 @@ class TestPage(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'about_us.html')
         self.assertContains(response, 'BookTime')
+
+  
