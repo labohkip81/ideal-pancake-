@@ -1,4 +1,5 @@
 from django.db import models
+from django import forms
 from django.contrib.auth.models import  AbstractUser, BaseUserManager
 # Create your models here.
 
@@ -88,3 +89,10 @@ class ProductImage(models.Model):
     thumbnail = models.ImageField(upload_to="product-thumbnails", null=True)
 
 
+class Lead(models.Model):
+    name = models.CharField(max_length=32)
+
+class LeadForm(forms.ModelForm):
+    class Meta:
+        model = Lead
+        fields = ('name',)

@@ -41,7 +41,14 @@ type="button"
       </li>
     </ul>
   </div>
-</nav>{% block content %}
+</nav>
+
+<!--This is for messages displaying on the app.-->
+
+{% for message in message %}
+<div class="alert alert-{{ message.tags }}">{{ message }}</div>
+{% end for %}
+{% block content %}
 
 {% endblock content %}
 
