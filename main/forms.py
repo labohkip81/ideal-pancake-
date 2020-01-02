@@ -3,6 +3,7 @@ from django.core.mail import send_mail
 from django.contrib.auth.forms import UserCreationForm as DjangoUserCreationForm
 from django.contrib.auth.forms import UsernameField
 from django.contrib.auth import authenticate
+from django.forms import inlineformset_factory
 
 import logging
 
@@ -94,3 +95,12 @@ class UserCreationForm(DjangoUserCreationForm):
             [self.cleaned_data["email"]],
             fail_silently=True,
         )
+
+
+BasketLineFormSet = inlineformset_factory(
+    models.Basket,
+    models.BasketLine,
+    fields = ("quantity",),
+    extra=0;
+)
+
