@@ -151,3 +151,4 @@ class BasketLine(models.Model):
     quantity = models.PositiveIntegerField(
         default=1, validators=[MinValueValidator(1)]
     )
+    

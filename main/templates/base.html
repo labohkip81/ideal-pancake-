@@ -48,7 +48,15 @@ type="button"
 {% for message in message %}
 <div class="alert alert-{{ message.tags }}">{{ message }}</div>
 {% endfor %}
+
+<!--basket functionality-->
 {% block content %}
+
+{% if request.basket %}
+<div>
+{{ request.basket.count }}
+item in basket
+{% endif %}
 
 {% endblock content %}
 
