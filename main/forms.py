@@ -101,6 +101,5 @@ BasketLineFormSet = inlineformset_factory(
     models.Basket,
     models.BasketLine,
     fields = ("quantity",),
-    extra=0;
-)
+    extra=0,)
 
